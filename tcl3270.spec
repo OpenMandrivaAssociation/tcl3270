@@ -1,17 +1,15 @@
-%define	pversion 334p3
-
 Summary:	Tcl-based scripted 3270 Emulator
 Name:		tcl3270
-Version:	3.3.4p3
-Release:	%mkrel 3
+Version:	3.3.6
+Release:	%mkrel 1
 License:	GPL
 Group:		Terminals
 URL:		http://www.geocities.com/SiliconValley/Peaks/7814/
-Source0:	tcl3270-%{pversion}.tar.bz2
+Source0:	tcl3270-%{version}.tgz
 Requires:	x3270 =< %{version}
 BuildRequires:	openssl-devel
 Requires:	tcl
-BuildRequires:	XFree86-devel
+BuildRequires:	X11-devel
 BuildRequires:	tcl tcl-devel
 #BuildRequires:	tclx
 BuildRoot:	%{_tmppath}/%{name}-%{pversion}-root
