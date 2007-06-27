@@ -32,7 +32,7 @@ perl -p -i -e "s|/usr/local|/usr|g" configure
 %build
 
 %configure2_5x \
-    --with-tcl=8.4
+    --with-tcl=8.5
 
 #    --with-tclx=8.3
 
