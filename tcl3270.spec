@@ -12,7 +12,6 @@ Requires:	tcl
 BuildRequires:	X11-devel
 BuildRequires:	tcl tcl-devel
 #BuildRequires:	tclx
-BuildRoot:	%{_tmppath}/%{name}-%{pversion}-root
 
 %description
 Complete IBM 3278/3279 emulation, TN3270E support, structured
