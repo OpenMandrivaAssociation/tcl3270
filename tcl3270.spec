@@ -1,7 +1,7 @@
 Summary:	Tcl-based scripted 3270 Emulator
 Name:		tcl3270
 Version:	3.3.6
-Release:	%mkrel 2
+Release:	%mkrel 4
 License:	GPL
 Group:		Terminals
 URL:		http://www.geocities.com/SiliconValley/Peaks/7814/
