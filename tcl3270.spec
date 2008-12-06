@@ -1,17 +1,16 @@
 Summary:	Tcl-based scripted 3270 Emulator
 Name:		tcl3270
-Version:	3.3.6
-Release:	%mkrel 4
-License:	GPL
+Version:	3.3.8p1
+Release:	%mkrel 1
+License:	MIT
 Group:		Terminals
 URL:		http://www.geocities.com/SiliconValley/Peaks/7814/
-Source0:	tcl3270-%{version}.tgz
+Source0:	http://downloads.sourceforge.net/x3270/%{name}-%{version}.tgz
 Requires:	x3270 =< %{version}
 BuildRequires:	openssl-devel
 Requires:	tcl
 BuildRequires:	X11-devel
-BuildRequires:	tcl tcl-devel
-#BuildRequires:	tclx
+BuildRequires:	tcl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{pversion}-root
 
 %description
@@ -32,9 +31,7 @@ perl -p -i -e "s|/usr/local|/usr|g" configure
 %build
 
 %configure2_5x \
-    --with-tcl=8.5
-
-#    --with-tclx=8.3
+    --with-tcl=8.6
 
 %make %{name}
 
@@ -53,7 +50,7 @@ install -m644 %{name}.man %{buildroot}%{_mandir}/man1/%{name}.1
 %files
 %defattr(-,root,root)
 %doc html/Build.html html/FAQ.html html/Intro.html html/Lineage.html
-%doc html/New.html html/README.html html/tcl3270-man.html README
+%doc html/ReleaseNotes.html html/README.html html/tcl3270-man.html README
 %doc Examples/cms_cmd.tcl3270
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}*
