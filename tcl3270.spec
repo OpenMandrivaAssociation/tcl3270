@@ -1,7 +1,7 @@
 Summary:	Tcl-based scripted 3270 Emulator
 Name:		tcl3270
 Version:	3.3.9ga12
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	MIT
 Group:		Terminals
 URL:		http://x3270.sourceforge.net
