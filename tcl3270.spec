@@ -4,7 +4,7 @@ Version:	3.3.9ga12
 Release:	4
 License:	MIT
 Group:		Terminals
-URL:		http://x3270.sourceforge.net
+URL:		https://x3270.sourceforge.net
 Source0:	http://downloads.sourceforge.net/project/x3270/x3270/%version/suite3270-%version.tgz
 Requires:	x3270 <= %{version}
 BuildRequires:	openssl-devel
