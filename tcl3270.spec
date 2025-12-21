@@ -7,6 +7,11 @@ Group:		Terminals
 URL:		https://x3270.sourceforge.net
 Source0:	http://downloads.sourceforge.net/project/x3270/x3270/%version/suite3270-%version.tgz
 Requires:	x3270 <= %{version}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	openssl-devel
 Requires:	tcl
 BuildRequires:	tcl-devel
